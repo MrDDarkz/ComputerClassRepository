@@ -1,153 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
     <title>div tags</title>
-    <style>
-        * {
-            color: hsl(0, 0%, 95%);
-	    font-family: 'JetBrains Mono';
-        }
+  </head>
 
-        body {
-            background-color: #040514;
-        }
-        #main {
-            max-width: 100ch;
-            margin: auto;
-        }
-        #main h1 {
-            background-color: #139;
-        }
-
-
-        #main h2 {
-            color: #238
-        }
-
-        .div {
-            padding: 0.5rem 1.5rem;
-            margin: 1rem;
-            border-radius: 1rem;
-            background-color: #14152f;
-            border: #357 solid 0.1rem;
-            transition: 0.25s;
-            h1 {
-                padding: 0.1rem 1rem;
-                border-radius: 0.5rem;
-            }
-
-            h2 {
-                padding: 0 0.5rem;
-            }
-
-            p {
-                padding: 0 1rem;
-            }
-        }
-        .div:hover {
-            padding: 1.5rem 2.5rem;
-        }
-        .div:active {
-            background-color: #24254f;
-        }
-
-        #d1 {
-            h1 {
-                background-color: #713;
-            }
-            h2 {
-                color: #834;
-            }
-        }
-
-        #d2 {
-            h1 {
-                background-color: #173;
-            }
-            h2 {
-                color: #384;
-            }
-        }
-
-        #d3 {
-            h1 {
-                background-color: #137;
-            }
-            h2 {
-                color: #348;
-            }
-        }
-
-        #nav {
-            display: flex;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: 0.5rem;
-            position: sticky;
-            background-color: #080a1e;
-            height: 3rem;
-            border: #238 solid 0.1rem;
-            border-radius: 1rem;
-        }
-
-        #nav div {
-            margin: auto 0.5rem;
-        }
-
-        #nav h2 {
-            color: hsl(0, 0%, 95%);
-            background-color: #027;
-            margin: 0;
-            padding: 0 0.75rem;
-            border-radius: 0.45rem;
-	    transition: 0.5s;
-            a {
-                text-decoration: none;
-            }
-        }
-        #nav h2:hover {
-            background-color: #138;
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <div id="nav">
-        <div>
-            <h2><a href="https://www.ddarkz.xyz">DDarkz</a></h2>
-        </div>
+      <div>
+	<h2><a href="https://www.ddarkz.xyz">DDarkz</a></h2>
+      </div>
     </div>
     <div id="main">
-        <div id="d1" class="div">
-            <h1>Heading</h1>
-            <div class="h1des">
-                <h2>Sub-heading</h2>
-                <p class="mainparagraph">Paragraph</p>
-                <h3><a href="https://red.ddarkz.xyz/"></a></h3>
-            </div>
-        </div>
-        <div id="d2" class="div">
-            <h1>Heading</h1>
-            <h2>Sub-heading</h2>
-            <p class="mainparagraph">Paragraph</p>
-            <h3><a href="https://project.ddarkz.xyz/"></a></h3>
-        </div>
-        <div id="d3" class="div">
-            <h1>Heading</h1>
-            <h2>Sub-heading</h2>
-            <p class="mainparagraph">Paragraph</p>
-            <h3><a href="https://www.ddarkz.xyz/"></a></h3>
-        </div>
-        <div id="ranking" class="div">
-            <h1>ID</h1>
-            <h2>Class</h2>
-            <h3>general</h3>
-        </div>
+      <div id="d1" class="div">
+	<h1>Red</h1>
+	<div class="h1des">
+	  <h2>Sub-heading</h2>
+	  <p class="mainparagraph">Paragraph</p>
+	  <h3><a href="https://red.ddarkz.xyz/"></a></h3>
+	</div>
+      </div>
+      <div id="d2" class="div">
+	<h1>Green</h1>
+	<h2>Sub-heading</h2>
+	<p class="mainparagraph">Paragraph</p>
+	<h3><a href="https://project.ddarkz.xyz/"></a></h3>
+      </div>
+      <div id="d3" class="div">
+	<h1>Blue</h1>
+	<h2>Sub-heading</h2>
+	<p class="mainparagraph">Paragraph</p>
+	<h3><a href="https://www.ddarkz.xyz/"></a></h3>
+      </div>
+      <div id="ranking" class="div">
+	<h1 id="rankid" class="rankclass">ID - Priority: First</h1>
+	<h1 class="rankclass">Class - Priority: Second</h1>
+	<h1>general - Priority: Third</h1>
+      </div>
     </div>
-</body>
+  </body>
 
 </html>
