@@ -88,6 +88,7 @@ body {
   height: 3rem;
   border: #224 solid 0.1rem;
   border-radius: 1rem;
+  z-index: 100;
 }
 
 #nav div {
