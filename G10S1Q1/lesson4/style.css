@@ -1,0 +1,43 @@
+* {
+    color: #ffffff; /*Ex3-3*/
+    margin: 0;
+}
+body {
+    background: #000020; /*Ex3-1*/
+    border: #fff solid 0.15rem; /*Ex3-4*/
+}
+h1, h2, p {
+    border: #fff solid 0.15rem; /*Ex3-4*/
+    padding: 0.5rem; /*Ex7*/
+    margin: 0.5rem; /*Ex7*/
+    border-radius: 1rem;
+}
+h1 {
+    color: #ffffff;
+    background: #002050; /*Ex3-2*/
+    text-align: center;
+    border-radius: 0;
+}
+p {
+    background: #102f5a; /*Ex3-2*/
+    margin: 0 4rem 0 4rem;
+    padding: 1rem;
+}
+h2 {
+    color: #ffffff;
+    background:#1a2045;
+    margin: 0 3rem 0 3rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #a0a0ef
+}
+img { /*Challenge*/
+    margin: 1rem auto;
+    display:block;
+    border: #fff solid 0.5rem;
+}

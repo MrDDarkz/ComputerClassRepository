@@ -1,0 +1,76 @@
+Getting Started with HTML
+Introduction to HTML
+
+HTML stands for Hyper Text Markup Language. It is a coding language used to create webpages. HTML is written into special text documents that are used by web browsers to display text and other features. These documents, known as "Web pages," include markup tags such as <h1> for the start of a heading and </h1> for the end of a heading. Web pages are hosted on web servers, and browsers retrieve them from these servers.
+
+Many people still write HTML by hand using tools like Notepad on Windows or TextEdit on Mac. These documents are saved with a .html file extension to indicate they are web pages.
+
+To learn HTML, it's useful to look at the source code of other webpages. You can do this by clicking on the "View" menu and then on "Source," or by selecting "File" and then "View Source" in some browsers.
+
+This lesson will teach you how to:
+- Set up a webpage
+- Add a title
+- Add headings and paragraphs
+- Emphasize text
+- Add images
+- Add links to other pages
+
+Setting Up Your Webpage
+
+HTML documents start and end with HTML tags. Inside these tags, the document is divided into the Head and Body sections. The Head section contains metadata, the title, and other elements that do not display content. The Body section contains all the visible content of the webpage. Setting up these tags is a great way to start all your html files.
+Example:
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>
+
+Adding a Title
+
+Every HTML document needs a title. Here’s how to add one:
+
+<title>My first HTML document</title>
+
+Change "My first HTML document" to your desired title. The title should be placed within the Head section of your document.
+
+Exercise 1: Create a new HTML file called index.html. Add a Head and Body section. In the Head section, add a Title tag and create a title for your page. Save and open your file in a browser to check if the title works.
+Adding Headings and Paragraphs
+
+HTML provides six levels of headings. <h1> is the most important, and <h6> is the least important. Each paragraph is enclosed in <p> tags. For example:
+
+<h1>An important heading</h1>
+<p>This is the first paragraph.</p>
+<h2>A slightly less important heading</h2>
+<p>This is the second paragraph.</p>
+
+Emphasizing Text
+
+To emphasize text, you can use the <b> tag for bold text and the <u> tag for underlined text. For example:
+
+This is a really <b>interesting</b> topic!
+This is <u>underlined</u> text!
+
+Exercise 2: Edit your index.html file. Add an H1 heading with a paragraph underneath it (any text will do). Then add an H2 heading with another paragraph below it. Check your work by saving and opening the file in a browser. If it works, go back and edit index.html to make the H1 heading underlined and bold some text within a paragraph.
+Adding Images
+
+Images enhance your webpages and convey messages effectively. Use the <img> tag to add images. For example, if you have an image file called "peter.jpg" in the same folder as your HTML file, use:
+
+<img src="peter.jpg" width="200" height="150" alt="My friend Peter">
+
+The src attribute specifies the image file, while width and height define its dimensions. The alt attribute provides a description for those who can't see the image.
+
+Exercise 3: Find two images on Google and download them. Save them in the same folder as your HTML file. Edit your index.html to add one image below the first paragraph and another below the second paragraph.
+Adding Links
+
+Links make the web powerful by allowing users to navigate between pages. Use the <a> tag to create links. For example, to link to "page2.html":
+
+This is a link to <a href="page2.html">Page 2</a>.
+
+To link to an external website:
+
+<a href="https://www.youtube.com/">This is a link to YouTube</a>.
+
+Exercise 4: Create a new HTML file called page1.html in the same folder as index.html. Add an H1 tag and a paragraph to it. Add a link that takes you to Google when clicked. Add another link that takes you back to index.html. Go back to index.html and add a link to page1.html.
+Challenge: Download a new picture of a car and add it to page1.html. Make the image a clickable link that takes you to the car manufacturer's website (e.g., clicking on a Toyota image takes you to toyota.com).
+

@@ -1,0 +1,106 @@
+HTML has a head and a body
+If you use your web browser's view source feature (see the View or File menus) you can see the structure of HTML pages. The document generally starts with a declaration of which version of HTML has been used, and is then followed by an <html> tag followed by <head> and at the very end by </html>. The <html> ... </html> acts like a container for the document. The <head> ... </head> contains the title, and information on style sheets and scripts, while the <body> ... </body> contains the markup with the visible content. Here is a template you can copy and paste into your text editor for creating your own pages:
+<html>
+<head>
+  <title> replace with your document's title </title>
+</head>
+<body>
+
+replace with your document's content
+
+</body>
+</html>
+Whitespace – Creating Gaps
+One thing to note when you are writing your HTML is that if you put a new line or a space in your text editor, that doesn’t actually create a space when you view your file. For example:
+
+<h1> Main Heading </h1>
+<p> Introduction </p>
+
+And:
+<h1> Main Heading </h1>
+
+
+<p> Introduction </p>
+Will look the same when you open this file in a browser.  That’s because the browser will remove excess spaces and empty lines before it presents your file.
+If you want to add empty new lines you should use the <br> tag.  So if you want a gap like in the example above it should be written like this:
+<h1> Main Heading </h1>
+<br><br><br><br>
+<p> Introduction </p>
+
+Lists - Three kinds of lists
+HTML supports three kinds of lists. The first kind is a bulleted list, often called an unordered list. It uses the <ul> and <li> tags, for instance:
+<ul>
+  <li>the first list item</li>
+
+  <li>the second list item</li>
+
+  <li>the third list item</li>
+</ul>
+Note that you always need to end the list with the </ul> end tag, but that the </li> is optional and can be left off. The second kind of list is a numbered list, often called an ordered list. It uses the <ol> and <li> tags. For instance:
+<ol>
+  <li>the first list item</li>
+
+  <li>the second list item</li>
+
+  <li>the third list item</li>
+</ol>
+Like bulleted lists, you always need to end the list with the </ol> end tag, but the </li> end tag is optional and can be left off.
+Exercise 1 – In your lesson2 folder create a file index.html.  Add a pair of <html>,<head>,
+and <body> tags. In the correct place, add some <title> text. Finally add a <h1> heading with “Lesson 2” text.
+Exercise 2 - Add a bullet point list to your page that has 4 of your favourite foods.
+Exercise 3 –Below ex 2, make an ordered list of 3 links to 3 different websites.
+
+
+The third and final kind of list is the definition list. This allows you to list terms and their definitions. This kind of list starts with a <dl> tag and ends with </dl> Each term starts with a <dt> tag and each definition starts with a <dd>. For instance:
+<dl>
+  <dt>the first term</dt>
+  <dd>its definition</dd>
+
+  <dt>the second term</dt>
+  <dd>its definition</dd>
+
+  <dt>the third term</dt>
+  <dd>its definition</dd>
+</dl>
+
+Nested Lists
+The end tags </dt> and </dd> are optional and can be left off. Note that lists can be nested, one within another. For instance:
+<ol>
+  <li>the first list item</li>
+
+  <li>
+    the second list item
+    <ul>
+      <li>first nested item</li>
+      <li>second nested item</li>
+    </ul>
+  </li>
+
+  <li>the third list item</li>
+</ol>
+You can also make use of paragraphs and headings etc. for longer list items.
+Exercise 4 – Make a nested list.  Create an ordered list <ol> that contains a <ul> for one of the list items.  Both the <ul> and <ol> should have three <li>.
+
+Tables
+As you know from real life, organising things into tables can be very useful.  HTML allows you to create tables using a combination of table HTML tags.
+You start off with the <table> tag and then you create your table row by row.  To create a row you use <tr> tag . Your <tr> tag works a bit like the lists from before.  Inside your <tr> tag you will have multiple <th> or <td> tags.  <th> tags are for table headers (titles of columns) while <td> are for table data.  Consider the example below:
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+Exercise 5 – On index.html - Make a table with 3 columns headers– Name , Nickname , Age.  Then, add 3 people (3 rows) to your table.
+Exercise 6 – Create a 4 column table.  Column one will be the name of a car model (911), the second column will be the manufacturer (Porsche) , the third column will be a link to the manufacturers website (https://www.porsche.com/)  and the fourth column will be an image of the car.  
+Create at least 3 rows to your table

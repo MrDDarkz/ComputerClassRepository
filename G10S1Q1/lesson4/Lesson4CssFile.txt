@@ -1,0 +1,90 @@
+Review
+Ex1 – Create a lesson4 folder and inside create a new HTML file – Call it page2.html.  This is the main file for this lesson and all exercises should be done in it (except ex5).  Inside page2.html:  add <html>, <head>, <body>, <h1>, <h2> and <p> HTML tags with some content.  Open it in a browser to test it works.
+Ex2 – Add a style section to page2.html and change the background color and text color of the h1 text and add a border (any style you like)
+
+Writing CSS in a Separate File
+As you saw previously, CSS can be written directly into an html file using <style> tags.  This works fine but the problem becomes, if I have 20 webpages and I want them to all have the same CSS rules, do I have to write them into every file? No, you don’t.
+Writing the CSS into the html files can waste a lot of time if your webpages all have similar styles.  It can save a lot of time to have the style sheet as a separate .css file.  This css file can then be referenced by all the other webpages.
+To create a css file you can use a normal text editor such as notepad.  Create a new file and save it with the .css file extension and edit it with note pad.
+In your css file you need everything that was in between the <style> tags (but not the <style> tags themselves)
+For example:
+In the HTML file:
+<head>
+<style>
+body { 
+           color: blue;
+           background-color: yellow;
+}
+h1 { 
+	color: red;
+}
+</style>		In the CSS file:
+
+body { 
+           color: blue;
+           background-color: yellow;
+}
+h1 { 
+	color: red;
+}
+
+
+You can then save it as a css file with the extension . css.
+You then need to add a new tag to the html file so it knows where to find the information it needs. This linking information is put in the head of the html using the <link> tag.
+
+Example: 
+<head>
+<link rel=”stylesheet” href=”NameOfFile.css”>      (don’t copy paste this line !!)
+</head>
+This same link can be placed in multiple web pages allowing it to be referenced by all.
+
+Ex3 - Inside your lesson 4 folder, create a file called website.css.  Inside website.css create CSS that will: 
+•	Create a background color for the body element
+•	Create a background color for the h1 and p elements
+•	Change the text color of the h1 and p elements
+•	Add borders to your body, h1 and h2 elements
+Link your .css file to your page2.html file .  
+Ex4 – Refresh page2.html to see if the css works. Try moving the link tag below the style tag and check again. Then move the link tag above the style tag and see whats happens. Why do you think this happens? Delete the style section from page2.html and check again.
+Ex5 – Find index.html from lesson 3, copy it into the lesson 4 folder.  Modify it so that index.html and page2.html have the same style (because they both are using the same .css file). 
+
+Alignment 
+Let’s have a look at alignment.  Alignment is how do you want your elements to be organized in terms of left and right of the screen.  Do you want them in the center? You need Center aligned. How about lined up on the right side? You need right aligned.  By default, your elements are left aligned and as you can see all your stuff on your webpage is on the left.  
+Let’s look at how to change the alignment for different elements. 
+For text you can use the property text-align like this: 
+h1 {
+text-align: center;
+}
+Other possible values are: left, right and justify
+For other elements that are not text like images, links, tables you need to do something a bit more complicated and that is use margins and padding to get the alignment you want.
+Ex 6 – Add some CSS rules into your website.css file to make your h1, h2 and p elements all center aligned.
+
+Margins and Padding
+ 
+
+
+The CSS rules you need to adjust the margin and the padding are shown below
+
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+or
+p {
+  margin: 100px 150px 100px 80px;
+}
+h1 {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+or
+h1 {
+  padding: 50px 30px 50px 80px;
+}
+
+Ex 7 – To your page2.html add some margin and padding to your h1, h2 and p tags.  Make sure it is clearly visible (so when I grade it, I can see it – don’t add margin of 1px)  
+Challenge – Add an image to your page2.html and then see if you can create CSS rules for the image. Give it a border and then check it works.  Then try using margin values to get it lined up in the center of your page?  Will it stay in the center if you change the window size? Can you fix it? Try Googling this problem.
+

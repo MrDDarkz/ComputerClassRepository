@@ -1,0 +1,81 @@
+Review
+Ex1
+Create a new folder called Lesson3 and inside that folder create an index.html file. Add to it the structure tags - <html>,<head>,<body> in the correct places.  Add a <title>,<h1>,<p>,<h2>,<p> content in that order. Make up the text for the content. 
+
+Ex2
+To this index.html add a <ol> list and a <ul> list each with 3 items
+
+
+Cascading Style Sheets - CSS
+Writing web pages using HTML tags does not produce very nice looking web pages.  They look very basic and boring.   A cascading style sheet or CSS can solve this.  Style and format CSS rules can do many things including adding colors to your page, adding borders, aligning items as you would like and many more.
+Basically – HTML makes the content of your website and CSS makes it look good
+
+
+Using CSS
+There are different ways to include CSS in your webpage.
+The first way is to use a special HTML tag to write your CSS rules directly into your webpage much like you would add an image or a link.  We will have a look at this method in a moment.  However, this method has its downsides.
+Imagine you have a website with 50 webpages you will need to write CSS rules into every webpage.  This is going to take a long time.  There is a solution to this and that is to add CSS rules to your pages in a different way.  
+A different way to add CSS to your page is to use a special .css file.  The idea is, you add all your CSS rules to the .css file and then you can link your HTML file to your .css file.  What this means is, you can write all your CSS rules one time and then have all your web pages look at that file.  In the next lesson we will have a look at how to do this. 
+
+
+Writing CSS into HTML File
+If you are writing the CSS rules into the html file you need to use the HTML tags <style> and </style>.
+You should place the code into the <head> section of the HTML file.
+For example:
+<head>
+<style> 
+h1 { 
+color: blue;
+background-color: yellow;
+}
+</style>
+</head>
+Important:
+Style sheets in CSS are made up of rules. Each rule has three parts:
+1.	the selector (in the example: “body” or “h2”), which tells the browser which part of the document is affected by the rule.
+2.	the property (in the example, 'color' and 'background-color' are both properties), which specifies what aspect of the layout is being set.  Remember to include a semi-colon at the end of each property.
+3.	and the value ('purple'), which gives the value for the style property.
+
+So for example:
+<style> 
+h1 { 
+color: red;
+}
+</style>
+Ex 3
+Using a pair of <style> tags, change the text color of your h1 , h2 and p elements to any color you would like using 3 CSS rules like the example above.  
+Ex 4
+There is a CSS property named background-color ,here is an example:
+h1 { 
+color: blue;
+background-color: yellow;
+}
+Look at the example above and try adding a background color to your h1,h2 and p elements.
+Ex 5
+Add a background color to your lists.  Can you make it so the list items have a different background color?
+
+
+Adding Borders
+There are many different things you can do with CSS rules.  Far too many to list here.  To find a full list of CSS properties you should go to http://www.w3schools.com/cssref/  .  Being able to use this website is important so you can do anything you would like with CSS.
+Let’s use the website to figure out how to add borders to things using CSS.
+When you first land at the page – try searching for what you want.  In our case borders
+ 
+
+As you can see from the search results there are a lot of properties about adding borders! Choosing the one to use can be tricky but read the name and description to help make a decision.  We are going to choose the first option – border.   This property allows us to set a border-width, border-style and a border-color all in one property.  But how do you use it? Click on the name for more information.
+
+ 
+When you click on the border name it will take you to a page with more information about this CSS rule.  Here at the top we can see some examples.  Lets try copying and pasting this into our HTML file and test it.
+By playing around with some of these values we can see what they do with the example:  
+border: 5px solid red
+The first value is the width of the border in pixels (px) the second value is the style or type of border. Solid is a solid line.  The final value (you may have guessed) is the color of the border.
+You may be asking yourself – What other options do I have for values?
+Well lets check the website and see, I would like to know what values I can use for the style of border, I have used solid but what other options are available? Go to the website and click on the border-style name
+ 
+This will take you to another website and somewhere on that page you can look for the other possible values:
+ 
+Ex 6 
+In index.html , add a border to your h1 element.  It should be 10 px wide, be a solid style and be a color different to the text color.  Do the same for your h2 element.
+Ex 7
+For your <p> tags, try experimenting with a different style of border. Add a border to your p elements that is not a solid style.  Experiment with different styles and choose your favorite.
+Ex 8
+Challenge – Add borders to both your lists except this time you need to make the top and bottom borders different to the side borders.  So the top border will match the bottom border and the left border will match the right border but the two pairs of borders will be different styles.  Use this website to help you http://www.w3schools.com/cssref/.
