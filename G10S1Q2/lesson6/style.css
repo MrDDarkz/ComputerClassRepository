@@ -1,0 +1,53 @@
+* {
+  font-family: 'JetBrains Mono', 'sans-serif'
+}
+body {
+  background-color: #01031f;
+}
+
+.s1div {
+  background-color: #203faf;
+  padding: 0.5rem;
+  border-radius: 1.33rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#s1d1 {
+  background-color: #f53;
+}
+
+#s1d2 {
+  background-color: #2a5;
+}
+
+#s1d3 {
+  background-color: #35f;
+}
+
+#s1d4 {
+  background-color: #fe6;
+}
+input {
+  border-radius: 1.333rem;
+}
+legend {
+  background-color: #ffc;
+  border-radius: 1.33rem;
+  border: #999 solid 0.2rem;
+  padding: 0.2rem 0.5rem;
+}
+fieldset {
+  background-color: #ff9;
+  border-radius: 1.33rem;
+  margin: 0.5rem;
+  border: #666 solid 0.2rem;
+}
+select {
+  border-radius: 1.33rem;
+  padding: 0.5;
+}
+textarea {
+   border-radius: 1.33rem;
+   padding: 0.5rem;
+ }

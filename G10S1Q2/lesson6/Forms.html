@@ -1,0 +1,340 @@
+<head>
+  <title> Forms </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
+</head>
+
+<body>
+  <div class="s1div" id="s1d1">
+    <h1> Forms - Section 1 </h1>
+    <p> In this lesson you will have a look at how to create forms on a webpage.
+    Forms are great for getting inputs and data from the user. </p>
+
+    <p>Before that lets do some review, complete the following tasks:</p>
+    <ol>
+      <li>Add 4 div tags to this file. One div tag for each section (look for h1 or h2 tags) </li>
+      <li>Create a seperate .css file. Add different background colors for each div</li>
+      <li>Link this file with your .css file and check it works</li>
+    </ol>
+
+  </div>
+  <div class="s1div" id="s1d2">
+    <h2> Creating Forms - Section 2</h2>
+    <p>Forms are created using the form html tag. </p>
+    <p>Inside the form tag you can have various types of other HTML elements:</p>
+
+    <form>
+
+      <label for="q1"> First Name </label> <br>
+      <input type="text" id="q1" name="q1"> <br>
+
+      <label for="q2"> Last Name </label> <br>
+      <input type="text" id="q2" name="q2"> <br>
+
+      <label for="q3"> Age </label> <br>
+      <input type="text" id="q3" name="q3"> <br>
+
+      <label for="q4"> 20 Paragraph Essay </label> <br>
+      <textarea id="q4" name="q4" rows="20" cols="40" placeholder="Enter your essay here"></textarea> <br>
+
+      <input type="submit">
+    </form>
+
+    <p> Labels should be "connected" to the inputs. Make sure the for="" Inside
+    the label tag matches the id="" inside the input tag </p>
+
+    <p>Ex 1 - The Age label in the form above is not connected to the input. Add
+    an ID value to the input then connect it to the label using for="".</p>
+
+    <p>Ex 2 - Add one extra label and input to the form above. Make up the label
+    anything you want.</p>
+
+    <p>Ex 3 - Sometimes you need a larger area to write something into a form, a comment
+    or review for example. Do some research and find a way to add a "text area" to your form.
+    Find out how to make the text area 20 rows and 40 columns in size.</p>
+
+
+
+  </div>
+  <div class="s1div" id="s1d3">
+    <h2>Checkboxes and Radio Buttons - Section 3</h2>
+
+    <p>Other than the text inputs which can be from text areas or text inputs, you also have
+    Checkboxes and Radio Buttons. They are another type of input:</p>
+
+    <form>
+
+      <input type="checkbox" id="int1" name="int1" value="football">
+      <label for="int1"> Football </label><br>
+
+      <input type="checkbox" id="int2" name="int2" value="golf">
+      <label for="int2"> Golf </label> <br>
+
+      <input type="checkbox" id="int3" name="int3" value="rugby">
+      <label for="int3"> Rugby </label> <br>
+
+      <input type="checkbox" id="int4" name="int4" value="soccer">
+      <label for="int4"> Soccer </label>
+
+      <h3>Select a month(alphabtical order)</h3>
+
+      <input type="radio" id="mon1" name="month" value="april">
+      <label for="mon1">April</label> <br>
+      <input type="radio" id="mon2" name="month" value="august">
+      <label for="mon2">August</label> <br>
+      <input type="radio" id="mon3" name="month" value="december">
+      <label for="mon3">December</label> <br>
+      <input type="radio" id="mon4" name="month" value="february">
+      <label for="mon4">February</label> <br>
+      <input type="radio" id="mon5" name="month" value="january">
+      <label for="mon5">January</label> <br>
+      <input type="radio" id="mon6" name="month" value="july">
+      <label for="mon6">July</label> <br>
+      <input type="radio" id="mon7" name="month" value="june">
+      <label for="mon7">June</label> <br>
+      <input type="radio" id="mon8" name="month" value="march">
+      <label for="mon8">March</label> <br>
+      <input type="radio" id="mon9" name="month" value="may">
+      <label for="mon9">May</label> <br>
+      <input type="radio" id="mon10" name="month" value="november">
+      <label for="mon10">November</label> <br>
+      <input type="radio" id="mon11" name="month" value="october">
+      <label for="mon11">October</label> <br>
+      <input type="radio" id="mon12" name="month" value="september">
+      <label for="mon12">September</label> <br>
+
+      <input type="submit">
+
+    </form>
+
+
+    <p>Ex 3 - Add one more checkbox and label. Reload the page and check what happens in the
+    address bar when you press the submit button. Can you see the ID and Values? </p>
+
+    <p>Ex 4 - The above example shows you how to create checkbox inputs. There is another
+    type of inputs called Radio Buttons.
+    Do some research and create a 4 option radio button list inside the form above below
+    the check boxes. Once you have done play with the form and figure out what is the difference
+    between Checkboxes and Radio buttons? </p>
+
+
+
+  </div>
+  <div class="s1div" id="s1d4">
+    <h2>Select - Choose an Option - Section 4</h2>
+    <p>Another item you might find on a form is a multiple choice selection. To create these you use the select tag
+    as
+    follows:</p>
+
+    <form>
+      <label for="favSubject">Choose your fav subject</label>
+      <select name="favSubject" id="favSubject">
+	<option value="computer">Computer Studies</option>
+	<option value="math">Maths</option>
+	<option value="english">English</option>
+	<option value="science">Science</option>
+      </select> <br>
+
+      <label for="bible">Choose a book in the New Testament</label>
+      <select name="bible" id="bible">
+	<option value="matthew">Matthew</option>
+	<option value="mark">Mark</option>
+	<option value="luke">Luke</option>
+	<option value="john">John</option>
+	<option value="acts">Acts</option>
+	<option value="other">other(I forgot)</option>
+      </select> <br>
+
+      <input type="submit">
+    </form>
+
+    <p>Ex 5 - Add another completely new selection and label to the form above that allows offers 5 options.</p>
+
+    <h2>Organising your Forms</h2>
+    <p>If you have a form with lots of questions it could be a
+    good idea to separate it out into different sections.
+    To do that you can use the fieldset tag and to give each
+    section a heading you can use the legend tag:</p>
+
+    <form>
+      <fieldset>
+	<legend>Personal Info</legend>
+	<label for="age">Enter your age:</label><br>
+	<input type="text" id="age" name="age"><br>
+	<input type="radio" id="male" name="sex" value="male">
+	<label for="male">Male</label><br>
+	<input type="radio" id="female" name="sex" value="female">
+	<label for="male">Female</label><br>
+      </fieldset>
+      <fieldset>
+	<legend> Mulitple Choice Time! </legend>
+	<label for="favSubject">Choose your fav subject</label>
+	<select name="favSubject" id="favSubject">
+	  <option value="computer">Computer Studies</option>
+	  <option value="math">Maths</option>
+	  <option value="english">English</option>
+	  <option value="science">Science</option>
+	</select>
+      </fieldset>
+      <fieldset>
+	<legend> Enter your year of birth in binary</legend>
+	<input type="checkbox" id="1" name="1" value="1">
+	<label for="1"> 1 </label><br>
+	<input type="checkbox" id="2" name="2" value="2">
+	<label for="2"> 2 </label><br>
+	<input type="checkbox" id="4" name="4" value="4">
+	<label for="4"> 4 </label><br>
+	<input type="checkbox" id="8" name="8" value="8">
+	<label for="8"> 8 </label><br>
+	<input type="checkbox" id="16" name="16" value="16">
+	<label for="16"> 16 </label><br>
+	<input type="checkbox" id="32" name="32" value="32">
+	<label for="32"> 32 </label><br>
+	<input type="checkbox" id="64" name="64" value="64">
+	<label for="64"> 64 </label><br>
+	<input type="checkbox" id="128" name="128" value="128">
+	<label for="128"> 128 </label><br>
+	<input type="checkbox" id="256" name="256" value="256">
+	<label for="256"> 256 </label><br>
+	<input type="checkbox" id="512" name="512" value="512">
+	<label for="512"> 512 </label><br>
+	<input type="checkbox" id="1024" name="1024" value="1024">
+	<label for="1024"> 1024 </label><br>
+      </fieldset>
+      <fieldset>
+	<legend> Enter your age in hex </legend>
+	<select name="hexage" id="hexage">
+	  <option value="1">01</option>
+	  <option value="2">02</option>
+	  <option value="3">03</option>
+	  <option value="4">04</option>
+	  <option value="5">05</option>
+	  <option value="6">06</option>
+	  <option value="7">07</option>
+	  <option value="8">08</option>
+	  <option value="9">09</option>
+	  <option value="10">0a</option>
+	  <option value="11">0b</option>
+	  <option value="12">0c</option>
+	  <option value="13">0d</option>
+	  <option value="14">0e</option>
+	  <option value="15">0f</option>
+	  <option value="16">10</option>
+	  <option value="17">11</option>
+	  <option value="18">12</option>
+	  <option value="19">13</option>
+	  <option value="20">14</option>
+	  <option value="21">15</option>
+	  <option value="22">16</option>
+	  <option value="23">17</option>
+	  <option value="24">18</option>
+	  <option value="25">19</option>
+	  <option value="26">1a</option>
+	  <option value="27">1b</option>
+	  <option value="28">1c</option>
+	  <option value="29">1d</option>
+	  <option value="30">1e</option>
+	  <option value="31">1f</option>
+	  <option value="32">20</option>
+	  <option value="33">21</option>
+	  <option value="34">22</option>
+	  <option value="35">23</option>
+	  <option value="36">24</option>
+	  <option value="37">25</option>
+	  <option value="38">26</option>
+	  <option value="39">27</option>
+	  <option value="40">28</option>
+	  <option value="41">29</option>
+	  <option value="42">2a</option>
+	  <option value="43">2b</option>
+	  <option value="44">2c</option>
+	  <option value="45">2d</option>
+	  <option value="46">2e</option>
+	  <option value="47">2f</option>
+	  <option value="48">30</option>
+	  <option value="49">31</option>
+	  <option value="50">32</option>
+	  <option value="51">33</option>
+	  <option value="52">34</option>
+	  <option value="53">35</option>
+	  <option value="54">36</option>
+	  <option value="55">37</option>
+	  <option value="56">38</option>
+	  <option value="57">39</option>
+	  <option value="58">3a</option>
+	  <option value="59">3b</option>
+	  <option value="60">3c</option>
+	  <option value="61">3d</option>
+	  <option value="62">3e</option>
+	  <option value="63">3f</option>
+	  <option value="64">40</option>
+	  <option value="65">41</option>
+	  <option value="66">42</option>
+	  <option value="67">43</option>
+	  <option value="68">44</option>
+	  <option value="69">45</option>
+	  <option value="70">46</option>
+	  <option value="71">47</option>
+	  <option value="72">48</option>
+	  <option value="73">49</option>
+	  <option value="74">4a</option>
+	  <option value="75">4b</option>
+	  <option value="76">4c</option>
+	  <option value="77">4d</option>
+	  <option value="78">4f</option>
+	  <option value="79">50</option>
+	  <option value="80">51</option>
+	  <option value="81">52</option>
+	  <option value="82">53</option>
+	  <option value="83">54</option>
+	  <option value="84">55</option>
+	  <option value="85">56</option>
+	  <option value="86">57</option>
+	  <option value="87">58</option>
+	  <option value="88">59</option>
+	  <option value="89">5a</option>
+	  <option value="90">5b</option>
+	  <option value="91">5c</option>
+	  <option value="92">5d</option>
+	  <option value="93">5e</option>
+	  <option value="94">5f</option>
+	  <option value="95">60</option>
+	  <option value="96">61</option>
+	  <option value="97">62</option>
+	  <option value="98">63</option>
+	  <option value="99">64</option>
+	  <option value="100">65</option>
+	  <option value="101">66</option>
+	  <option value="102">67</option>
+	  <option value="103">68</option>
+	  <option value="104">69</option>
+	  <option value="105">6a</option>
+	  <option value="106">6b</option>
+	  <option value="107">6c</option>
+	  <option value="108">6d</option>
+	  <option value="109">6e</option>
+	  <option value="110">6f</option>
+	  <option value="111">70</option>
+	  <option value="112">71</option>
+	  <option value="113">72</option>
+	  <option value="114">73</option>
+	  <option value="115">74</option>
+	  <option value="116">75</option>
+	  <option value="117">76</option>
+	  <option value="118">77</option>
+	  <option value="119">78</option>
+	  <option value="120">79</option>
+	</select>
+      </fieldset>
+
+      <input type="submit">
+
+    </form>
+  </div>
+  <p>Ex 6 - Add another 2 fieldsets to the form above. You can copy and paste some code from previous examples for
+  content.
+
+  <p>Ex 7 - Add some colors to your final form. Create a different
+  background color for each fieldset. Also change the text color
+  of the legend text (can all be same color). Use the same
+  seperate .css file you created before for this lesson.
